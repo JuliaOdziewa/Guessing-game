@@ -7,14 +7,19 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Romantiques', sans-serif;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background-color: rgb(42, 42, 42);
+    background-image: url(circus-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .header {
     grid-column-start: 2;
     grid-row-start: 2;
+    font-size: 150%;
+    text-align: center;
 }

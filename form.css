@@ -7,31 +7,25 @@
 .form {
     grid-column-start: 2;
     grid-row-start: 3;
+    font-family: 'Bungee Inline', cursive;
+
     background-size: 70% 70%;
-    background-image: radial-gradient(
-        circle at 100% 100%,
-        transparent 0,
-        transparent 12px,
-        rgb(242, 234, 212) 13px
-    ),
-    radial-gradient(
-        circle at 0 0,
-        transparent 0,
-        transparent 12px,
-        rgb(242, 234, 212) 13px
-    ),
-    radial-gradient(
-        circle at 100% 0,
-        transparent 0,
-        transparent 12px,
-        rgb(242, 234, 212) 13px
-    ),
-    radial-gradient(
-        circle at 0 100%,
-        transparent 0,
-        transparent 12px,
-        rgb(242, 234, 212) 13px
-    );
+    background-image: radial-gradient(circle at 100% 100%,
+            transparent 0,
+            transparent 12px,
+            rgb(242, 234, 212) 13px),
+        radial-gradient(circle at 0 0,
+            transparent 0,
+            transparent 12px,
+            rgb(242, 234, 212) 13px),
+        radial-gradient(circle at 100% 0,
+            transparent 0,
+            transparent 12px,
+            rgb(242, 234, 212) 13px),
+        radial-gradient(circle at 0 100%,
+            transparent 0,
+            transparent 12px,
+            rgb(242, 234, 212) 13px);
     background-repeat: no-repeat;
     background-position: right bottom, left top, right top, left bottom;
     height: 1fr;
@@ -50,7 +44,7 @@
 }
 
 .font__label {
-    font-size: large;
+    font-size: 180%;
     margin: 0.5em;
 }
 
