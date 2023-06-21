@@ -7,28 +7,56 @@
 .form {
     grid-column-start: 2;
     grid-row-start: 3;
-    /* background-color: rgb(89, 89, 89); */
-
+    background-size: 70% 70%;
+    background-image: radial-gradient(
+        circle at 100% 100%,
+        transparent 0,
+        transparent 12px,
+        rgb(242, 234, 212) 13px
+    ),
+    radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        transparent 12px,
+        rgb(242, 234, 212) 13px
+    ),
+    radial-gradient(
+        circle at 100% 0,
+        transparent 0,
+        transparent 12px,
+        rgb(242, 234, 212) 13px
+    ),
+    radial-gradient(
+        circle at 0 100%,
+        transparent 0,
+        transparent 12px,
+        rgb(242, 234, 212) 13px
+    );
+    background-repeat: no-repeat;
+    background-position: right bottom, left top, right top, left bottom;
     height: 1fr;
-
 }
 
 .form__field {
-    border-radius: 50px;
+    border-radius: 0.5em;
+    border: 2px solid rgba(255, 0, 0, 0.309);
     padding: 20px;
     margin: 10px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    background-color: rgb(89, 89, 89);
+
 }
 
 .font__label {
     font-size: large;
+    margin: 0.5em;
 }
 
 .form__button {
     background-color: rgb(194, 78, 78);
+    margin: 0.5em;
     border-style: none;
     padding: 0.7em;
     transition: 0.7s;
