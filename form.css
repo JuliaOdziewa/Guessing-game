@@ -26,3 +26,18 @@
 .font__label {
     font-size: large;
 }
+
+.form__button {
+    background-color: rgb(194, 78, 78);
+    border-style: none;
+    padding: 0.7em;
+    transition: 0.7s;
+}
+
+.form__button:hover {
+    background-color: rgb(169, 67, 67);
+}
+
+.form__button:active {
+    background-color: rgb(142, 56, 56);
+}
