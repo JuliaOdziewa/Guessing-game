@@ -17,16 +17,20 @@
 </head>
 
 <body class="body">
-    <div class="header">
-        <h1>Zgadnij jaka to liczba</h1>
-    </div>
-    <div class="form">
-        <form>
-            <formfield class="form__field">
-                <label class="font__label">Wpisz liczbę</label>
-                <input class="form__input"><button class="form__button">Sprawdź odpowiedź</button>
-            </formfield>
-        </form>
+    <h1 class="header">Zgadnij jaka to liczba</h1>
+    <form class="form">
+        <formfield class="form__field">
+            <label class="font__label">Wpisz liczbę</label>
+            <input class="form__input"><button class="form__button">Sprawdź odpowiedź</button>
+            <label>Wybierz poziom trudności:
+                <select class="form__select">
+                    <option value="easy">łatwy</option>
+                    <option value="mid">średni</option>
+                    <option value="hard">trudny</option>
+                </select>
+            </label>
+        </formfield>
+    </form>
     </div>
 </body>
 

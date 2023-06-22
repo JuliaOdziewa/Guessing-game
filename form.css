@@ -2,6 +2,7 @@
     border-radius: 25px;
     border-style: none;
     padding: 10px;
+    border: 2px solid rgba(255, 0, 0, 0.309);
 }
 
 .form {
@@ -62,4 +63,9 @@
 
 .form__button:active {
     background-color: rgb(142, 56, 56);
+}
+
+.form__select {
+    border-radius: 25px;
+    border: 2px solid rgba(255, 0, 0, 0.309);
 }
