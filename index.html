@@ -19,17 +19,18 @@
 
 <body class="body">
     <h1 class="header">Zgadnij jaka to liczba</h1>
-    <form class="form">
+    <form class="form js-form">
         <formfield class="form__field">
             <label class="font__label">Wpisz liczbę</label>
-            <input class="form__input"><button class="form__button">Sprawdź odpowiedź</button>
+            <input class="form__input js-number"><button class="form__button">Sprawdź odpowiedź</button>
             <label>Wybierz poziom trudności:
-                <select class="form__select">
+                <select class="form__select js-level">
                     <option value="easy">łatwy</option>
-                    <option value="mid">średni</option>
+                    <option value="medium">średni</option>
                     <option value="hard">trudny</option>
                 </select>
             </label>
+            <p class="js-info"></p>
         </formfield>
     </form>
     </div>

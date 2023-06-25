@@ -13,3 +13,30 @@ const getNumberRange = (hardnessLevel) => {
     }
 };
 
+
+const level = document.querySelector(".js-level").value;
+const randomNumber = getRandomNumber(getNumberRange(level));
+
+const onFormSubmit = (event) => {
+    event.preventDefault();
+    const inputNumber = document.querySelector(".js-number");
+    const number = parseInt((inputNumber.value), 10);
+    const gameInfo = document.querySelector(".js-info");
+
+    if (number < randomNumber) {
+        gameInfo.innerText = `Liczba ${number} jest za mała!`;
+    } else if (number > randomNumber) {
+        gameInfo.innerText = `Liczba ${number} jest za duża!`;
+    } else if (number === randomNumber) {
+        alert(`Gratulacje! Odgadłeś liczbę: ${number}`);
+    }
+};
+
+
+const init = () => {
+const form = document.querySelector(".js-form");
+
+form.addEventListener("submit", onFormSubmit);
+};
+
+init();
