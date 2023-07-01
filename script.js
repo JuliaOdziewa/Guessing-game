@@ -13,14 +13,12 @@ const getNumberRange = (hardnessLevel) => {
     }
 };
 
-
-const level = document.querySelector(".js-level").value;
-const randomNumber = getRandomNumber(getNumberRange(level));
+let randomNumber; // Remove "const" to allow updating
 
 const onFormSubmit = (event) => {
     event.preventDefault();
     const inputNumber = document.querySelector(".js-number");
-    const number = parseInt((inputNumber.value), 10);
+    const number = parseInt(inputNumber.value, 10);
     const gameInfo = document.querySelector(".js-info");
 
     if (number < randomNumber) {
@@ -32,11 +30,17 @@ const onFormSubmit = (event) => {
     }
 };
 
-
 const init = () => {
-const form = document.querySelector(".js-form");
+    const form = document.querySelector(".js-form");
+    const levelInput = document.querySelector(".js-level");
 
-form.addEventListener("submit", onFormSubmit);
+    levelInput.addEventListener("change", () => {
+        const level = levelInput.value;
+        const maxNumber = getNumberRange(level);
+        randomNumber = getRandomNumber(maxNumber);
+    });
+
+    form.addEventListener("submit", onFormSubmit);
 };
 
 init();
