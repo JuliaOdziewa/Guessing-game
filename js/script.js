@@ -13,7 +13,7 @@ const getNumberRange = (hardnessLevel) => {
     }
 };
 
-let randomNumber; // Remove "const" to allow updating
+let randomNumber;
 
 const onFormSubmit = (event) => {
     event.preventDefault();
